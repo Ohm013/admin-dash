@@ -6,7 +6,7 @@
 }
 body {
     display: grid;
-    grid-template: 1fr 4fr / .75fr 3fr ; 
+    grid-template: 1fr 4fr / .5fr 3fr ; 
 }
 
 
@@ -14,7 +14,10 @@ body {
     background-color:#a7f3d0;
     grid-row: 1 / 3 ;
     display: grid;
-    grid-template-rows: .25fr .20fr;
+    grid-template-rows: .1fr .25fr .20fr;
+    font-size: 25px ;
+    gap: 30px ;
+    justify-content: start;
 }
 
 img {
@@ -24,12 +27,18 @@ img {
     
 }
 
+#dashboard-icon {
+    width : 50px;
+    height: 50px ;
+    margin-left: 20px ;
+    margin-right:5px;
+}
+
 .directory, .settings {
     font-weight: bolder ;
     display: grid;
     gap:20px ;
     padding: 30px ;
-  
 }
 
 .navigation, .settings > div {
@@ -41,7 +50,7 @@ img {
     background-color:#e5e7eb;
     grid-column: 2 / 3 ;
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 4fr 1fr;
     gap: 30px ;
     padding: 30px ;
 }
@@ -72,11 +81,16 @@ img {
 }
 
 .showcase {
-    height: auto ;
+    height: 250px;
     max-width: 80ch ;
     background-color:  #fafafa ;
     border-radius: 10px;
     padding: 20px ;
+    border-left: 1px rgb(168, 46, 46);
+    display: grid;
+    grid-template-rows: 0Sfr 1fr 1fr ;
+    grid-auto-flow: rows;
+ 
 }
 
 .announcement {
@@ -86,16 +100,27 @@ img {
     display: grid;
     grid-template-rows: .25fr .25fr .25fr;
     justify-items: center;
- 
+
 }
 
 .notification {
     width: 40ch;
+    border-bottom: 1px solid rgb(194, 189, 189);  
 }
 
-.trending {
-    background-color : #fafafa;
-    width: 45ch;
+#no-border{
+    border-bottom: none  ;
+}
+
+.user-feed {
+    background-color : #fafafa; 
+    width: 50ch;
+    border-radius: 10px ;
     display: grid;
-    grid-template-rows: .25fr .25fr .25fr .25fr;
+    grid-template: .25fr .25fr .25fr .25fr;
+}
+
+.tags > h4 > img {
+    width: auto ;
+    height: 70px;
 }
