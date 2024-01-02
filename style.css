@@ -195,6 +195,7 @@ img {
 
 .tags {
     display: flex;  
+    padding: 5px ;
 }
 .trending-accounts {
     display: flex;
