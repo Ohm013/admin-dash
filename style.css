@@ -33,7 +33,7 @@ img {
 
 #secondAvatar {
     height:120px ;
-    width: 90px ;
+    width: 110px ;
 }
 
 #dashboard-icon {
@@ -84,29 +84,34 @@ img {
 }
 
 .top-icons {
-    width: 40px;
+    width: 35px;
 }
 .bottom-header {
     display: grid;
     grid-template-columns: .4fr .1fr .1fr .1fr ;
     grid-auto-flow: column;
-    gap: 5px ;
     align-items: center;
     justify-content: space-around;
 }
 
 .user-intro {
-    display: grid;
-    grid-template-columns: .1fr .5fr ;
-    align-items:center;
-    justify-content: start;
+    display: flex;
+}
 
+.greeting {
+   display: flex;
+   flex-direction: column;
+}
+
+.bold-name {
+    font-size: 30px ;
 }
 .bottom-header > button {
     background-color:#fef08a;
     width: 150px;
     height: 50px;
     border-radius: 25px ;
+    font-size: 20px ;
 }
 
 .search,
@@ -180,10 +185,23 @@ img {
     width: 50ch;
     border-radius: 10px ;
     display: grid;
-    grid-template: .25fr .25fr .25fr .25fr;
+    grid-template-rows: .25fr .25fr .25fr .25fr;
 }
 
-.tags > h4 > img {
+.tags > img {
     width: auto ;
-    height: 70px;
+    height: 90px;
+}
+
+.tags {
+    display: flex;  
+}
+.trending-accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.not-bold {
+    font-weight: lighter;
 }
